@@ -1,0 +1,29 @@
+# @baseUrl = http://localhost:3000/api
+
+// @name GetAllCategory
+GET http://localhost:3000/api/categories/
+
+################################
+// @name AddNewCategory
+
+POST http://localhost:3000/api/categories/
+Content-Type: application/json; charset=utf-8
+
+{
+    "name": "Iphone 13 promax qeqeqe"
+}
+
+################################
+// @name AddNewCategory
+
+PATCH http://localhost:3000/api/categories/3
+Content-Type: application/json; charset=utf-8
+
+{
+    "name": "Laptop DELL"
+}
+
+
+################################
+// @name DeleteCategory
+Delete http://localhost:3000/api/categories/4

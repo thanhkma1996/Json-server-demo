@@ -1,0 +1,36 @@
+# @baseUrl = http://localhost:3000/api
+
+// @name GetAllProduct
+GET http://localhost:3000/api/product/
+
+################################
+// @name AddNewProduct
+
+POST @baseUrl/product/
+Content-Type: application/json; charset=utf-8
+
+{
+    "name": "Iphone 13 promax qeqeqe"
+}
+
+################################
+// @name AddNewProduct
+
+PATCH http://localhost:3000/api/product/3
+Content-Type: application/json; charset=utf-8
+
+{
+    "name": "Laptop DELL"
+}
+
+
+################################
+// @name DeleteProduct
+Delete http://localhost:3000/api/product/4
+
+
+### 
+// @name Filter Price
+GET http://localhost:3000/api/product/?price_gte=450
+
+# https://github.com/typicode/json-server
